@@ -1,10 +1,10 @@
-# python-hello-world
+# python-hello-world 🐍
 
-## Purpose
+## Purpose 💖
 
 Try Python install on Mac and running a simple python program
 
-## Install
+## Install 🪴
 
 I followed [these instructions](https://www.freecodecamp.org/news/how-to-install-python-on-a-mac) for using [Rye](https://rye.astral.sh/) to install Python on a mac
 
@@ -71,3 +71,44 @@ Keep in mind that you've set the ~/.zprofile file to use Rye shims to intercep
 $ which python
 /Users/username/.rye/shims/python
 ```
+
+## Create project 🎬
+
+1. Create directory `python-hello-world` for files and repo
+1. In the directory specify python version for project `rye pin 3` which creates a .python-version file specifying the newest Python version
+1. Create a project specific pyproject.toml file in your project root directory `rye init`. Now it is possible to fetch a Python version and install packages.
+1. Install a specific version `rye fetch` - if not newest specific in .python-version file
+1. Install a package from the [Python Package Index](https://pypi.org/) `rye add cowsay` - first ensure `pyproject.toml` file was created in previous step
+1. Sync to update lockfiles and install the dependencies into the virtual environment `rye sync`
+
+## Run 🐮
+
+Start python on the command line
+
+1. `python`
+
+At the prompts type
+
+1. `import cowsay`
+1. `cowsay.cow('Hello World')`
+
+To quit
+
+1. `quit()`
+
+## Development 🤓
+
+Add software libraries to project
+
+1. Add Requests HTTP library `python -m pip install requests`
+1. Add Requests to `pyproject.toml` file `rye add requests`
+1. Sync packages `rye sync`
+
+Tip for beginners:
+
+- When see `pip install` in a tutorial, use `rye add` and `rye sync` instead, without additional commands for a virtual environment.
+
+## Not done 😬
+
+- Have not run the `python_hello_world/__init__.py` file that was created
+- Only have run the command `print("Hello World")` in the context of python running in the terminal
