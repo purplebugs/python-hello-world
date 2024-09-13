@@ -4,7 +4,7 @@
 
 Try Python install on Mac and running a simple python program
 
-## Install 🪴
+## Install Python on Mac 🪴
 
 I followed [these instructions](https://www.freecodecamp.org/news/how-to-install-python-on-a-mac) for using [Rye](https://rye.astral.sh/) to install Python on a mac
 
@@ -72,7 +72,7 @@ $ which python
 /Users/username/.rye/shims/python
 ```
 
-## Create project 🎬
+## Create Python project 🎬
 
 1. Create directory `python-hello-world` for files and repo
 1. In the directory specify python version for project `rye pin 3` which creates a .python-version file specifying the newest Python version
@@ -81,7 +81,7 @@ $ which python
 1. Install a package from the [Python Package Index](https://pypi.org/) `rye add cowsay` - first ensure `pyproject.toml` file was created in previous step
 1. Sync to update lockfiles and install the dependencies into the virtual environment `rye sync`
 
-## Run 🐮
+## Run Python 🐮
 
 Start python on the command line
 
