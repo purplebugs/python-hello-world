@@ -96,7 +96,7 @@ To quit
 
 1. `quit()`
 
-## Provide and run an executable python script
+## Provide and run an executable python script 🤖
 
 1. Add the following to `pyproject.toml´ file
 
