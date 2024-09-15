@@ -130,8 +130,3 @@ Add software libraries to project
 Tip for beginners:
 
 - When see `pip install` in a tutorial, use `rye add` and `rye sync` instead, without additional commands for a virtual environment.
-
-## Not done 😬
-
-- Have not run the `python_hello_world/__init__.py` file that was created
-- Only have run the command `print("Hello World")` in the context of python running in the terminal
