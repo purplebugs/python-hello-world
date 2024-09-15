@@ -96,6 +96,29 @@ To quit
 
 1. `quit()`
 
+## Provide and run an executable python script
+
+1. Add the following to `pyproject.toml´ file
+
+```
+[project.scripts]
+"python-hello-world" = "python_hello_world:hello"
+```
+
+1. Create file `__main__.py` with
+
+```
+import python_hello_world
+import sys
+
+sys.exit(python_hello_world.hello())
+```
+
+1. Run `rye sync`
+1. Run the script `rye run python-hello-world`
+
+Note: Otherwise init an exectuable project from the start `rye init --script my-project` as per [Executable projects](https://rye.astral.sh/guide/basics/#executable-projects)
+
 ## Development 🤓
 
 Add software libraries to project

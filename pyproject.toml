@@ -12,6 +12,9 @@ dependencies = [
 readme = "README.md"
 requires-python = ">= 3.12"
 
+[project.scripts]
+"python-hello-world" = "python_hello_world:hello"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
